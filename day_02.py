@@ -1,5 +1,5 @@
 # Input
-reports =  list(map(list,(map(lambda li: map(int, li), [l for l in [line.split() for line in open('data/day_02.txt').readlines()]]))))
+reports =  [*map(lambda li: [*map(int, li)], [l for l in [line.split() for line in open('data/day_02.txt').readlines()]])]
 
 def get_is_safe(report):
     return (all( report[i] < report[i + 1] and abs(report[i] - report[i + 1]) < 4 for i in range(len(report) - 1) ) or
