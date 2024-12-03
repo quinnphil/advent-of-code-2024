@@ -1,6 +1,6 @@
-# Input
 import re
 
+# Input
 input = open('data/day_03.txt').read()
 
 # Part 1
