@@ -2,7 +2,7 @@
 reports =  [*map(lambda li: [*map(int, li)], [l for l in [line.split() for line in open('data/day_02.txt').readlines()]])]
 
 def get_is_safe(report):
-    return (all(0<x-y<4 for x,y in zip(report, report[1:]))) or all(0<y-x<4 for x,y in zip(report, report[1:]))
+    return (all(0<a-b<4 for a,b in zip(report, report[1:]))) or all(0<b-a<4 for a,b in zip(report, report[1:]))
 
 
 def get_is_safe_with_problem_dampener(report):
