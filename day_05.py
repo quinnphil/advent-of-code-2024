@@ -29,10 +29,7 @@ def is_vaild_update(update):
         if len(set(update[:i]).intersection(rules_after)) >= 1:
             valid_update = False
 
-    if valid_update:
-        return True
-    else:
-        return False
+    return valid_update
 
 
 def score(update):
@@ -48,7 +45,6 @@ for update in updates:
         updates_good.append(update)
     else:
         updates_bad.append(update)
-
 
 print("Part 1")
 print(score(updates_good))
