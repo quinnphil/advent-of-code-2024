@@ -35,8 +35,19 @@ Synopsis:
 - P1: XMAS in any direction
 - P2: find MAS in the shape of an X
 
+⭐⭐ Day 5: Print Queue 
+https://adventofcode.com/2024/day/4
+
+Synopsis:  
+- input:
+  -  list of rules about page orders  
+  -  list of updates with pages in order  
+- P1: Find all updates with the correct page order 
+- P2: Fix the incorrectly ordered pages
+
 ### Links  
-Advent of Code 2024  
+[Advent of Code 2024](https://adventofcode.com/2024)     
+[Advent of Code 2024 - Leaderboard](https://adventofcode.com/2024/leaderboard)  
 
 
 
