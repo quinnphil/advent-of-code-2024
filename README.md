@@ -1,7 +1,7 @@
 # Advent of Code 2024
 
 
-### Description  
+### Puzzles  
 
 ⭐⭐ Day 1: Historian Hysteria  
 https://adventofcode.com/2024/day/1  
@@ -36,7 +36,7 @@ Synopsis:
 - P2: find MAS in the shape of an X
 
 ⭐⭐ Day 5: Print Queue 
-https://adventofcode.com/2024/day/4
+https://adventofcode.com/2024/day/8
 
 Synopsis:  
 - input:
@@ -45,9 +45,21 @@ Synopsis:
 - P1: Find all updates with the correct page order 
 - P2: Fix the incorrectly ordered pages
 
+⭐⭐ Day 6: Guard Gallivant 
+https://adventofcode.com/2024/day/6
+
+Synopsis:  
+- input:
+  -  lab layout  
+  -  guard position
+- P1: Find distinct positions before guard leaves map
+- P2: Find positions where obstacle could be added to cause loop
+
+
 ### Links  
 [Advent of Code 2024](https://adventofcode.com/2024)     
-[Advent of Code 2024 - Leaderboard](https://adventofcode.com/2024/leaderboard)  
+[Advent of Code 2024 - Private Leaderboard](https://adventofcode.com/2024/leaderboard/private)  
+[Advent of Code 2024 - Personal Times](https://adventofcode.com/2024/leaderboard/self)  
 
 
 
