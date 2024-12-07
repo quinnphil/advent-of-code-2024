@@ -1,3 +1,5 @@
+import copy
+
 input = open('data/day_07.txt').read().strip('\n')
 
 def get_equations(data):
@@ -17,28 +19,34 @@ def mult(a, b):
 def combine(a, b):
     return (a * 10**(len(str(b))) + b)
 
-import itertools
 
-def solve(equations, part_n_operators):
-    solved = []
-    for equation in equations:
-        operations = list(itertools.product(part_n_operators, repeat=len(equation[1])-1))
-        for opers in operations:
-            result = equation[1][0]
-            for i in range(len(equation[1])-1):
-                result = opers[i](result, equation[1][i+1])
-                if result > equation[0]:
-                    break # on overshoot
-            if result == equation[0]:
-                solved.append(equation[0])
-                break
+def solve(equation, operators):
+    target = equation[0]
+    a = equation[1].pop(0)
+    b = equation[1].pop(0)
 
-    return(solved)
+    have_solution = False
+    for operator in operators:
+        total = operator(a, b)
+
+        # Done?
+        if total == target and len(equation[1]) == 0:
+            have_solution = True
+        elif (a > target) or len(equation[1]) == 0: # overshoot or nowhere to go
+            have_solution = False
+        elif len(equation[1]) > 0:
+            have_solution = solve([target, [total] + equation[1]], operators)
+        else:
+            have_solution = False
+
+        if have_solution:
+            break
+
+    return have_solution
 
 equations = get_equations(input)
-
 print("Part 1")
-print(sum(solve(equations, [add, mult])))
+print(sum([e[0] for e in equations if solve(copy.deepcopy(e), [add, mult])]))
 
 print("Part 2")
-print(sum(solve(equations, [add, mult, combine])))
+print(sum([e[0] for e in equations if solve(copy.deepcopy(e), [add, mult, combine])]))
