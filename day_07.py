@@ -26,13 +26,13 @@ def solve(equation, operators):
     b = equation[1].pop(0)
 
     have_solution = False
-    for operator in operators:
-        total = operator(a, b)
+    for op in operators:
+        total = op(a, b)
 
         # Done?
         if total == target and len(equation[1]) == 0:
             have_solution = True
-        elif (a > target) or len(equation[1]) == 0: # overshoot or nowhere to go
+        elif (total > target) or len(equation[1]) == 0: # overshoot or nowhere to go
             have_solution = False
         elif len(equation[1]) > 0:
             have_solution = solve([target, [total] + equation[1]], operators)
