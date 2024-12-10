@@ -45,6 +45,27 @@ Synopsis:
 - P1: Use addition and multiplication to determine valid equations
 - P2: Use addition, multiplicatin and combination to determine valid equations
 
+⭐⭐ [Day 8: Resonant Collinearity](https://adventofcode.com/2024/day/8)  
+Synopsis:  
+- input:
+  - list of antanna positons
+- P1: Determine antinodes
+- P2: Find more antinodes
+
+⭐⭐ [Day 9: Disk Fragmenter](https://adventofcode.com/2024/day/9)  
+Synopsis:  
+- input:
+  - disk to defrag
+- P1: Defrag using all available space
+- P2: Defrag using continuous space only
+
+⭐⭐ [Day 10: Hoof It](https://adventofcode.com/2024/day/10)  
+Synopsis:  
+- input:
+  - x,y,h topology map
+- P1: Find count trails that lead to trailhead
+- P2: Determine trail rating for trailhead
+
 
 ### Links  
 [Advent of Code 2024](https://adventofcode.com/2024)     
@@ -53,10 +74,14 @@ Synopsis:
 
 
 ### Tweet
-⭐⭐ Day 7: Bridge Repair 
-adventofcode.com/2024/day/7
+⭐⭐ Day 10: Hoof It
+https://adventofcode.com/2024/day/10
 
-P1: Create first class functions for addition and multiplier.  Apply all permentations of these to the integer values.  Sum totals of valid equations.
-P2: Add combination first class function.  Same as P1.
+- P1: Track valid trails using dequeu - count trails
+- P2: Calculate rating from P1 trails
+
+
+P1: For each antenna pair - determine antinode position
+P2: For each antenna pair - keep adding antinodes while within grid
 #aoc2024 #python
-Code: https://github.com/quinnphil/advent-of-code-2024/blob/main/day_07.py
+Code: [needs tidyinging up]
