@@ -66,19 +66,26 @@ Synopsis:
 - P1: Find count trails that lead to trailhead
 - P2: Determine trail rating for trailhead
 
+⭐⭐ [Day 11: Plutonian Pebbles](https://adventofcode.com/2024/day/11)  
+Synopsis:  
+- input:
+  - list of stones
+- P1: Find number of stones after blinking 25 times
+- P2: Find number of stones after blinking 75 times
 
 ### Links  
 [Advent of Code 2024](https://adventofcode.com/2024)     
 [Advent of Code 2024 - Private Leaderboard](https://adventofcode.com/2024/leaderboard/private)  
 [Advent of Code 2024 - Personal Times](https://adventofcode.com/2024/leaderboard/self)  
 
+[Github - Leftfish](https://github.com/Leftfish/Advent-of-Code-2023)
 
 ### Tweet
-⭐⭐ Day 10: Hoof It
-https://adventofcode.com/2024/day/10
+⭐⭐ Day 11: Plutonian Pebbles
+https://adventofcode.com/2024/day/11
 
-- P1: Track valid trails using dequeu - count trails
-- P2: Calculate rating from P1 trails
+- P1: Count stoned after 25 blinks
+- P2: Use function call caching to count stones after 75 blinks
 
 
 P1: For each antenna pair - determine antinode position
